@@ -1,10 +1,6 @@
 function repeatString(str, num) {
     // Input validation
-    if (typeof str !== 'string') {
-      return "ERROR";
-    }
-
-    if (typeof num !== 'number' || num < 0 || !Number.isInteger(num)) {
+    if (typeof str !== 'string' || typeof num !== 'number' || num < 0 || !Number.isInteger(num)) {
         return "ERROR"
     }
 
